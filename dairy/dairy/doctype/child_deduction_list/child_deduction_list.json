@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-01 00:51:47.219128",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer_code",
+  "supplier_name",
+  "total_amount",
+  "column_break_tnt4u",
+  "status",
+  "cowbuffalo",
+  "total_liter",
+  "section_break_lep3j",
+  "liter_wise",
+  "percentage_wise",
+  "bill_wise",
+  "column_break_uxvo8",
+  "liter_wise_amt",
+  "percentage_wise_amt",
+  "bill_wise_amt",
+  "section_break_pmuax",
+  "total_deduction_amt"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Deduction Status"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "cowbuffalo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Milk Type"
+  },
+  {
+   "fieldname": "total_deduction_amt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Deduction Amount"
+  },
+  {
+   "fieldname": "farmer_code",
+   "fieldtype": "Data",
+   "label": "Farmer Code"
+  },
+  {
+   "fieldname": "liter_wise",
+   "fieldtype": "Float",
+   "label": "Liter Wise"
+  },
+  {
+   "fieldname": "percentage_wise",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percentage Wise"
+  },
+  {
+   "fieldname": "bill_wise",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bill Wise"
+  },
+  {
+   "fieldname": "total_liter",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Liter"
+  },
+  {
+   "fieldname": "column_break_tnt4u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lep3j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uxvo8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "liter_wise_amt",
+   "fieldtype": "Currency",
+   "label": "Liter Wise Amt"
+  },
+  {
+   "fieldname": "percentage_wise_amt",
+   "fieldtype": "Currency",
+   "label": "Percentage Wise Amt"
+  },
+  {
+   "fieldname": "bill_wise_amt",
+   "fieldtype": "Currency",
+   "label": "Bill Wise Amt"
+  },
+  {
+   "fieldname": "section_break_pmuax",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-07 16:36:01.183543",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Child Deduction List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-{shift}-{supplier_id}-{milk_type}-{##}",
+ "creation": "2023-10-07 17:16:22.881702",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_id",
+  "date",
+  "shift",
+  "column_break_67rxj",
+  "supplier_id",
+  "milk_type",
+  "rate_group",
+  "column_break_gfxzx",
+  "supplier_name",
+  "village",
+  "section_break_f8f01",
+  "fat",
+  "calculate",
+  "column_break_etora",
+  "snf",
+  "column_break_uugad",
+  "litre",
+  "section_break_cw19f",
+  "rate",
+  "column_break_2uf4a",
+  "amount",
+  "column_break_5zhra",
+  "bill_status",
+  "section_break_yjeq1",
+  "account_dr",
+  "column_break_2zfab",
+  "account_cr",
+  "section_break_o0f5b",
+  "column_break_3kfbp",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "supplier_id.branch",
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch ",
+   "options": "Dairy Branch"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "label": "Shift",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_67rxj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Link",
+   "label": "Farmer Code",
+   "options": "Vendor Registration"
+  },
+  {
+   "fetch_from": "supplier_id.milk_type",
+   "fieldname": "milk_type",
+   "fieldtype": "Data",
+   "label": "Milk Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_group",
+   "fieldtype": "Link",
+   "label": "Rate Group",
+   "options": "Rate Master"
+  },
+  {
+   "fieldname": "column_break_gfxzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier_id.name1",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier_id.village",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "section_break_f8f01",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fat",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "column_break_etora",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "snf",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SNF",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uugad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "litre",
+   "fieldtype": "Float",
+   "label": "Litre"
+  },
+  {
+   "fieldname": "section_break_cw19f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_2uf4a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "column_break_5zhra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Not Proceed",
+   "fieldname": "bill_status",
+   "fieldtype": "Check",
+   "label": "Bill Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_yjeq1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "account_dr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Dr)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_2zfab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_cr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Cr)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_o0f5b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3kfbp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Milk Collection",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Data Collection",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-07 17:16:22.881702",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Data Collection",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{group_name}-{milk_type}-{from_date}",
+ "creation": "2023-03-01 00:30:35.063976",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group_name",
+  "column_break_bjcmx",
+  "branch_id",
+  "section_break_riczm",
+  "from_date",
+  "column_break_fw3oo",
+  "to_date",
+  "column_break_vt9cs",
+  "milk_type",
+  "column_break_hcyii",
+  "attach",
+  "section_break_a9udu",
+  "rate_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_hcyii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Select",
+   "label": "Milk Type",
+   "options": "Cow\nBuffalo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "section_break_a9udu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate_list",
+   "fieldtype": "Table",
+   "label": "Rate List",
+   "options": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate Chart Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Dairy Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bjcmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_riczm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fw3oo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vt9cs",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-03 11:35:04.243276",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Rate Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

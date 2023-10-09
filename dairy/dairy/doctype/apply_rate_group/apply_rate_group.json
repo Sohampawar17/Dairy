@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:from_date-{rate_group}",
+ "creation": "2023-03-01 00:11:56.176505",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "milk_type",
+  "column_break_qrvjl",
+  "from_date",
+  "to_date",
+  "section_break_xzge6",
+  "rate_group",
+  "column_break_3vipd",
+  "check_all",
+  "section_break_oofs2",
+  "supplier_list",
+  "apply"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Dairy Branch",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "rate_group.milk_type",
+   "fieldname": "milk_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Milk Type",
+   "options": "\nCow\nBuffalo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qrvjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_xzge6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rate Group",
+   "options": "Rate Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3vipd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "section_break_oofs2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "apply",
+   "fieldtype": "Button",
+   "label": "Apply"
+  },
+  {
+   "fieldname": "supplier_list",
+   "fieldtype": "Table",
+   "options": "Apply Rate Group Supplier Child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-02 10:37:37.552520",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Apply Rate Group",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

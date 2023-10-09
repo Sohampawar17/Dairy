@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-Deduction-{#####}",
+ "creation": "2023-03-01 01:34:26.090297",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_id",
+  "first_date",
+  "column_break_zirbc",
+  "branch_name",
+  "last_date",
+  "column_break_0nzmt",
+  "section_break_ydibe",
+  "hi",
+  "column_break_t4fvn",
+  "litre_wise",
+  "percentage_wise",
+  "bill_wise",
+  "column_break_frayy",
+  "cow",
+  "cow2",
+  "cow3",
+  "column_break_kt3hv",
+  "buffalo",
+  "buffalo1",
+  "buffalo2",
+  "column_break_nagh6",
+  "section_break_s4et4",
+  "check_all",
+  "supplier_list",
+  "show",
+  "section_break_vyasa",
+  "deduction_list",
+  "amended_from",
+  "account_cr",
+  "account_dr"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch Code",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "column_break_zirbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "branch_id.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "first_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_frayy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_s4et4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "section_break_vyasa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_list",
+   "fieldtype": "Table",
+   "label": "Farmer List",
+   "options": "Child Deduction Supplier List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Standard Deduction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Standard Deduction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cow",
+   "fieldtype": "Float",
+   "label": "Cow"
+  },
+  {
+   "default": "0",
+   "fieldname": "buffalo",
+   "fieldtype": "Float",
+   "label": "Buffalo"
+  },
+  {
+   "fieldname": "show",
+   "fieldtype": "Button",
+   "label": "Do Deduction"
+  },
+  {
+   "fieldname": "deduction_list",
+   "fieldtype": "Table",
+   "label": "Deduction List",
+   "options": "Child Deduction List"
+  },
+  {
+   "default": "Stock In Hand - QT",
+   "fieldname": "account_dr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Dr)",
+   "options": "Account"
+  },
+  {
+   "default": "Creditors - QT",
+   "fieldname": "account_cr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Account(Cr)",
+   "options": "Account"
+  },
+  {
+   "default": "Litre Wise",
+   "fieldname": "litre_wise",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "default": "Percentage Wise",
+   "fieldname": "percentage_wise",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "default": "Bill Wise",
+   "fieldname": "bill_wise",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cow2",
+   "fieldtype": "Float",
+   "label": "Cow"
+  },
+  {
+   "fieldname": "column_break_kt3hv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cow3",
+   "fieldtype": "Float",
+   "label": "Cow"
+  },
+  {
+   "default": "0",
+   "fieldname": "buffalo1",
+   "fieldtype": "Float",
+   "label": "Buffalo"
+  },
+  {
+   "default": "0",
+   "fieldname": "buffalo2",
+   "fieldtype": "Float",
+   "label": "Buffalo"
+  },
+  {
+   "fieldname": "column_break_nagh6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0nzmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ydibe",
+   "fieldtype": "Section Break",
+   "label": "Deduction Type"
+  },
+  {
+   "fieldname": "column_break_t4fvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hi",
+   "fieldtype": "Data",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-03 18:07:40.776138",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Standard Deduction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

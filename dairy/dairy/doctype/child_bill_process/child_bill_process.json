@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-01 00:58:21.211457",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "milk_type",
+  "avg_fat",
+  "avg_snf",
+  "avg_litre",
+  "total",
+  "deduction_amount",
+  "total_amount",
+  "supplier_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Milk Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "avg_fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Avg. Fat"
+  },
+  {
+   "fieldname": "avg_snf",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Avg. SNF"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "deduction_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Deduction Amount"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier ID"
+  },
+  {
+   "fieldname": "avg_litre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Litre"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-02 10:42:14.724240",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Child Bill Process",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

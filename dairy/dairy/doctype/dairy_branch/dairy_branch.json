@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{branch_name}-{####}",
+ "creation": "2023-03-01 00:24:30.928553",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_name",
+  "column_break_dgdga",
+  "firm_id",
+  "section_break_puzyk",
+  "bill_period",
+  "column_break_1qjiv",
+  "mobile_no",
+  "address_section",
+  "village",
+  "taluka",
+  "column_break_kldyz",
+  "district",
+  "column_break_qlpmy",
+  "state",
+  "column_break_3ntz4",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bill_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Bill Period",
+   "options": "7\n10\n15\n30",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "firm_id",
+   "fieldtype": "Link",
+   "label": "Firm ID",
+   "options": "Firm Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dgdga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_puzyk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_1qjiv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fetch_from": "village.taluka",
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "label": "Taluka"
+  },
+  {
+   "fieldname": "column_break_kldyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "column_break_qlpmy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.starte",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "column_break_3ntz4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.pin_code",
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-03 11:25:40.138436",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Dairy Branch",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

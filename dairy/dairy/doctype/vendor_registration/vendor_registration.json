@@ -1,0 +1,265 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FA-{#####}",
+ "creation": "2023-10-07 16:55:18.246131",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_section",
+  "name1",
+  "column_break_20bbg",
+  "gender",
+  "column_break_nd95s",
+  "dob",
+  "column_break_dmlkr",
+  "age",
+  "section_break_ufmyz",
+  "branch",
+  "column_break_h3h05",
+  "vendor_group",
+  "contact_information_section",
+  "village",
+  "phone_no",
+  "column_break_bw5kc",
+  "taluka",
+  "email_id",
+  "column_break_kikds",
+  "district",
+  "aadhar_card",
+  "column_break_sifaq",
+  "pin_code",
+  "column_break_6fllj",
+  "state",
+  "section_break_esnus",
+  "farmer",
+  "column_break_2k47z",
+  "customer",
+  "column_break_mhvox",
+  "section_break_yzxlk",
+  "milk_type",
+  "section_break_pscqe",
+  "aadhar_card_atta",
+  "supplier_type",
+  "supplier_doc",
+  "customer_doc"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_20bbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "column_break_nd95s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "column_break_dmlkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "section_break_ufmyz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "column_break_h3h05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Farmer",
+   "fieldname": "vendor_group",
+   "fieldtype": "Link",
+   "label": "Vender Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "column_break_bw5kc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.taluka",
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "label": "Taluka"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "column_break_kikds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "aadhar_card",
+   "fieldtype": "Data",
+   "label": "Aadhar Card"
+  },
+  {
+   "fieldname": "column_break_sifaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.pin_code",
+   "fieldname": "pin_code",
+   "fieldtype": "Int",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "column_break_6fllj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.starte",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "section_break_esnus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "farmer",
+   "fieldtype": "Check",
+   "label": "Farmer"
+  },
+  {
+   "fieldname": "column_break_2k47z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "customer",
+   "fieldtype": "Check",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "column_break_mhvox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yzxlk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Select",
+   "label": "Milk Type ",
+   "options": "Cow\nBuffalo"
+  },
+  {
+   "fieldname": "section_break_pscqe",
+   "fieldtype": "Section Break",
+   "label": "Document Attach"
+  },
+  {
+   "fieldname": "aadhar_card_atta",
+   "fieldtype": "Attach",
+   "label": "Aadhar Card "
+  },
+  {
+   "default": "Individual",
+   "fieldname": "supplier_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "supplier_type",
+   "options": "Company\nIndividual"
+  },
+  {
+   "fieldname": "supplier_doc",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "supplier_doc"
+  },
+  {
+   "fieldname": "customer_doc",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "customer_doc"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-07 16:55:18.246131",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Vendor Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

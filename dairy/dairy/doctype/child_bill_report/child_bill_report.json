@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-01 01:04:11.734931",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "date",
+  "shift",
+  "milk_type",
+  "fat",
+  "snf",
+  "litre",
+  "total",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Milk Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fat"
+  },
+  {
+   "fieldname": "snf",
+   "fieldtype": "Data",
+   "label": "SNF"
+  },
+  {
+   "fieldname": "litre",
+   "fieldtype": "Data",
+   "label": "Litre"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "label": "Shift"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "label": "Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-01 01:04:51.153516",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Child Bill Report",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{today}-{branch_id}-{#####}",
+ "creation": "2023-03-01 01:17:50.338196",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_id",
+  "first_date",
+  "account_cr",
+  "column_break_zirbc",
+  "branch_name",
+  "last_date",
+  "account_dr",
+  "column_break_frayy",
+  "section_break_beelh",
+  "section_break_vyasa",
+  "check_all",
+  "supplier_list",
+  "show_data",
+  "data_collection",
+  "section_break_eke7a",
+  "bill_child",
+  "section_break_indzi",
+  "total_litre",
+  "column_break_zee3u",
+  "total",
+  "column_break_jvye1",
+  "deduction_amount",
+  "column_break_y1vul",
+  "bill_amount",
+  "today",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch Code",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "column_break_zirbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "branch_id.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "section_break_beelh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_frayy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "section_break_vyasa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_list",
+   "fieldtype": "Table",
+   "label": "Supplier List",
+   "options": "Child Supplier List"
+  },
+  {
+   "fieldname": "show_data",
+   "fieldtype": "Button",
+   "label": "Show Data"
+  },
+  {
+   "fieldname": "data_collection",
+   "fieldtype": "Table",
+   "label": "data collection",
+   "options": "Bill Data"
+  },
+  {
+   "fieldname": "section_break_eke7a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bill_child",
+   "fieldtype": "Table",
+   "options": "Child Bill Process"
+  },
+  {
+   "fieldname": "total_litre",
+   "fieldtype": "Data",
+   "label": "Total Litre"
+  },
+  {
+   "fieldname": "bill_amount",
+   "fieldtype": "Data",
+   "label": "Bill Amount"
+  },
+  {
+   "fieldname": "deduction_amount",
+   "fieldtype": "Data",
+   "label": "Deduction Amount"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "default": "Today",
+   "fieldname": "today",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Today"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bill Process",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_indzi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zee3u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jvye1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_y1vul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Creditors - QT",
+   "fieldname": "account_dr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Dr)",
+   "options": "Account"
+  },
+  {
+   "default": "Cash - QT",
+   "fieldname": "account_cr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Cr)",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-03 15:15:02.697662",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Bill Process",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

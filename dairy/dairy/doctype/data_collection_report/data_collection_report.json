@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{today}-{branch_id}-{#####}",
+ "creation": "2023-03-01 10:21:43.126850",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_id",
+  "column_break_zirbc",
+  "branch_name",
+  "section_break_beelh",
+  "first_date",
+  "column_break_frayy",
+  "last_date",
+  "section_break_s4et4",
+  "check_all",
+  "section_break_vyasa",
+  "supplier_list",
+  "section_break_eke7a",
+  "show_result",
+  "section_break_vf8z8",
+  "bill_child",
+  "total_litre",
+  "bill_amount",
+  "deduction_amount",
+  "addition_amount",
+  "total",
+  "today"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch Id",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "column_break_zirbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "section_break_beelh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_frayy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_s4et4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "section_break_vyasa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_list",
+   "fieldtype": "Table",
+   "label": "Supplier List",
+   "options": "Child Supplier List"
+  },
+  {
+   "fieldname": "section_break_eke7a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "show_result",
+   "fieldtype": "Button",
+   "label": "Show Result"
+  },
+  {
+   "fieldname": "section_break_vf8z8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bill_child",
+   "fieldtype": "Table",
+   "options": "Child Bill Report"
+  },
+  {
+   "fieldname": "total_litre",
+   "fieldtype": "Data",
+   "label": "Total Litre"
+  },
+  {
+   "fieldname": "bill_amount",
+   "fieldtype": "Data",
+   "label": "Bill Amount"
+  },
+  {
+   "fieldname": "deduction_amount",
+   "fieldtype": "Data",
+   "label": "Deduction Amount"
+  },
+  {
+   "fieldname": "addition_amount",
+   "fieldtype": "Data",
+   "label": "Addition Amount"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "default": "Today",
+   "fieldname": "today",
+   "fieldtype": "Data",
+   "label": "Today"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-01 10:22:16.851209",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Data Collection Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

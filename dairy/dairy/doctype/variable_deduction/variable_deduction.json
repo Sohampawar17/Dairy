@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-{supplier}-{##}",
+ "creation": "2023-03-01 10:33:14.441909",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_ynzee",
+  "branch",
+  "column_break_ox1ww",
+  "branch_name",
+  "column_break_u3jct",
+  "deduction_status",
+  "section_break_5jssm",
+  "supplier",
+  "column_break_b12s8",
+  "supplier_name",
+  "column_break_zpf8t",
+  "village",
+  "section_break_eq3af",
+  "deduction_type",
+  "deduction_amount",
+  "paid_amount",
+  "column_break_ycbco",
+  "description",
+  "account",
+  "hgfhgfh",
+  "accountdr",
+  "column_break_wabd0",
+  "accountcr",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_ynzee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "section_break_5jssm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Farmer Code",
+   "options": "Vendor List"
+  },
+  {
+   "fieldname": "column_break_b12s8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduction_type",
+   "fieldtype": "Link",
+   "label": "Deduction Name",
+   "options": "Deduction Types"
+  },
+  {
+   "fieldname": "section_break_eq3af",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "deduction_amount",
+   "fieldtype": "Currency",
+   "label": "Deduction Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "hgfhgfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accountdr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Dr)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "accountcr",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account(Cr)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Variable Deduction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier.name1",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "column_break_wabd0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ycbco",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ox1ww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier.village",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "column_break_zpf8t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "deduction_status",
+   "fieldtype": "Check",
+   "label": "Deduction Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Data",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fetch_from": "branch.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "column_break_u3jct",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-03 16:46:36.381510",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Variable Deduction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
